@@ -18,3 +18,12 @@ policy "blob-public-access-level-set-to-private" {
 policy "queue-logging-is-enabled" {
   source = "./policies/queue-logging-is-enabled/queue-logging-is-enabled.sentinel"
 }
+policy "less-than-200-month" {
+  source = "./policies/less-than-a-month/200.sentinel"
+  enforcement_level = "soft-mandatory"
+}
+
+policy "less-than-300-month" {
+  source = "./policies/less-than-a-month/300.sentinel"
+  enforcement_level = "hard-mandatory"
+}
